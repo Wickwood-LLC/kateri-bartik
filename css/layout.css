@@ -1,72 +1,31 @@
+/**
+ * @file
+ * Bartik layout styling.
+ */
 
-/* ---------- Basic Layout Styles ----------- */
-
-#header div.section,
-#navigation div.section,
-#featured div.section,
-#messages,
-#main,
-#triptych,
-#footer-columns,
-#footer {
-  width: 960px;
-  margin-left: auto;
+/**
+ * Container
+ */
+.layout-container {
+  box-sizing: border-box;
+  max-width: 860px;
   margin-right: auto;
+  margin-left: auto;
 }
-#content,
-.sidebar,
-#triptych-first,
-#triptych-middle,
-#triptych-last,
-#footer-firstcolumn,
-#footer-secondcolumn,
-#footer-thirdcolumn,
-#footer-fourthcolumn {
-  display: inline;
-  float: left; /* LTR */
-  position: relative;
+
+@media all and (min-width: 851px) {
+  .layout-container {
+    max-width: 1290px;
+  }
 }
-.one-sidebar #content {
-  width: 720px;
+
+/**
+ * Main
+ */
+.layout-main-wrapper {
+  min-height: 300px;
 }
-.two-sidebars #content {
-  width: 480px;
-}
-.no-sidebars #content {
-  width: 960px;
-  float: none;
-}
-.sidebar {
-  width: 240px;
-}
-#main-wrapper {
-  min-height: 500px;
-}
-#messages div.section,
-#content .section,
-.sidebar .section {
-  padding: 0 15px;
-}
-#breadcrumb {
-  margin: 0 15px;
-}
-#triptych-first,
-#triptych-middle,
-#triptych-last {
-  margin: 20px 20px 30px;
-  width: 280px;
-}
-#footer-wrapper {
-  padding: 35px 5px 30px;
-}
-#footer-firstcolumn,
-#footer-secondcolumn,
-#footer-thirdcolumn,
-#footer-fourthcolumn {
-  padding: 0 10px;
-  width: 220px;
-}
-#footer {
-  width: 940px;
-  min-width: 920px;
+.layout-main {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
