@@ -1,5 +1,5 @@
 # Schema for the configuration files of the Bartik theme.
 
-bartik.settings:
+kateri_bartik.settings:
   type: theme_settings
-  label: 'Bartik settings'
+  label: 'Kateri Bartik settings'

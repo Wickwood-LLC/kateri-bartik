@@ -53,11 +53,11 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/config/schema/bartik.schema.yml": {
+	"/config/schema/kateri_bartik.schema.yml": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/config/schema/bartik.schema.yml",
+		"oAP": "/config/schema/kateri_bartik.schema.yml",
 		"oF": 0
 		},
 	"/css/base/elements.css": {
@@ -635,30 +635,30 @@
 	"/kateri_bartik.breakpoints.yml": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/kateri_bartik.breakpoints.yml",
-		"oF": 0
+		"oF": 1
 		},
 	"/kateri_bartik.info.yml": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/kateri_bartik.info.yml",
-		"oF": 0
+		"oF": 1
 		},
 	"/kateri_bartik.libraries.yml": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/kateri_bartik.libraries.yml",
-		"oF": 0
+		"oF": 1
 		},
 	"/kateri_bartik.theme": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/kateri_bartik.theme",
-		"oF": 0
+		"oF": 1
 		},
 	"/logo.svg": {
 		"ft": 2097152,
