@@ -240,6 +240,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/css/components/header.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/css/components/header.css.map",
+		"oF": 0
+		},
 	"/css/components/help.css": {
 		"aP": 1,
 		"bl": 0,
@@ -460,6 +467,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/css/components/site-branding.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/css/components/site-branding.css.map",
+		"oF": 0
+		},
 	"/css/components/site-footer.css": {
 		"aP": 1,
 		"bl": 0,
@@ -600,6 +614,13 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/favicon.ico",
+		"oF": 0
+		},
 	"/images/add.png": {
 		"ft": 32768,
 		"iS": 94,
@@ -660,6 +681,17 @@
 		"oAP": "/kateri_bartik.theme",
 		"oF": 1
 		},
+	"/logo.png": {
+		"ft": 32768,
+		"iS": 36008,
+		"oA": 0,
+		"oAP": "/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -712,7 +744,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/block.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -725,7 +757,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/book.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -738,7 +770,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/breadcrumb.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -751,7 +783,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/buttons.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -764,7 +796,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/captions.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -777,7 +809,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/comments.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -790,7 +822,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/contextual.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -803,7 +835,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/demo-block.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -816,7 +848,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/dropbutton.component.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -829,7 +861,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/featured-bottom.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -842,7 +874,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/featured-top.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -855,7 +887,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/feed-icon.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -868,7 +900,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/field.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -881,7 +913,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/form.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -894,7 +926,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/forum.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -907,7 +939,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/header.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -920,7 +952,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/help.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -933,7 +965,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/highlighted.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -946,7 +978,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/image-button.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -959,7 +991,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/item-list.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -972,7 +1004,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/list-group.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -985,7 +1017,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/list.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -998,7 +1030,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/main-content.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1011,7 +1043,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/menu.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1024,7 +1056,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/messages.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1037,7 +1069,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/node-preview.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1050,7 +1082,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/node.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1063,7 +1095,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/page-title.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1076,7 +1108,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/pager.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1089,7 +1121,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/panel.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1102,7 +1134,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/password-suggestions.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1115,7 +1147,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/primary-menu.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1128,7 +1160,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/search-form.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1141,7 +1173,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/search-results.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1154,7 +1186,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/secondary-menu.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1167,7 +1199,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/shortcut.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1180,7 +1212,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/sidebar.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1193,7 +1225,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/site-branding.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1206,7 +1238,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/site-footer.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1219,7 +1251,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/skip-link.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1232,7 +1264,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/table.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1245,7 +1277,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/tablesort-indicator.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1258,7 +1290,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/tabs.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1271,7 +1303,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/text-formatted.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1284,7 +1316,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/toolbar.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1297,7 +1329,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/ui-dialog.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1310,7 +1342,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/ui.widget.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1323,7 +1355,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/vertical-tabs.component.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -1336,7 +1368,7 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/css/components/views.css",
-		"oF": 3,
+		"oF": 2,
 		"oS": 1,
 		"uL": 1
 		},
@@ -3412,12 +3444,12 @@
 		"autoOutputPathRelativePath": "../css",
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
-		"autoOutputPathStyle": 0,
-		"createSourceMap": 0,
+		"autoOutputPathStyle": 3,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
