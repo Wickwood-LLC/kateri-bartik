@@ -6,83 +6,173 @@
 html {
   height: 100%;
 }
+
 body {
   min-height: 100%;
   word-wrap: break-word;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, Times New Roman, Times, serif;
   font-size: 87.5%;
   line-height: 1.5;
 }
-a,
-a.link {
+
+a {
   text-decoration: none;
   border-bottom: 1px dotted;
-}
-a:hover,
-a:active,
-a:focus,
-.link:hover,
-.link:active,
-.link:focus {
-  text-decoration: none;
-  border-bottom-style: solid;
-}
-.link {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-h1 a,
-h2 a {
-  border-bottom: none;
+
+  &.link {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+  }
+
+  &:hover {
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
+
+  &:active {
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
+
+  &:focus {
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
 }
 
-/**
- * Reusable heading classes are included to help modules change the styling of
- * headings on a page without affecting accessibility.
- */
-h1,
-.heading-a {
+.link {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  &:hover {
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
+
+  &:active {
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
+
+  &:focus {
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
+}
+
+//@extend-elements
+//original selectors
+//h1, .heading-a
+%extend_1 {
   margin: 1em 0 0.5em;
   color: #000;
   font-size: 1.357em;
   font-weight: inherit;
 }
-h2,
-.heading-b {
+
+//original selectors
+//h2, .heading-b
+%extend_2 {
   margin: 1em 0 0.5em;
   font-size: 1.143em;
   font-weight: inherit;
 }
-h3,
-.heading-c {
+
+//original selectors
+//h3, .heading-c
+%extend_3 {
   margin: 1em 0 0.5em;
   font-size: 1.092em;
   font-weight: inherit;
 }
-h4,
-.heading-d {
+
+//original selectors
+//h4, .heading-d
+%extend_4 {
   margin: 1em 0 0.5em;
   font-size: 1.05em;
   font-weight: inherit;
 }
-h5,
-.heading-e {
+
+//original selectors
+//h5, .heading-e
+%extend_5 {
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-size: 0.889em;
   font-weight: inherit;
 }
-h6,
-.heading-f {
+
+//original selectors
+//h6, .heading-f
+%extend_6 {
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-size: 0.67em;
   font-weight: inherit;
 }
+
+h1 {
+  @extend %extend_1;
+
+  a {
+    border-bottom: none;
+  }
+}
+
+h2 {
+  @extend %extend_2;
+
+  a {
+    border-bottom: none;
+  }
+}
+
+.heading-a {
+  @extend %extend_1;
+}
+
+.heading-b {
+  @extend %extend_2;
+}
+
+h3 {
+  @extend %extend_3;
+}
+
+.heading-c {
+  @extend %extend_3;
+}
+
+h4 {
+  @extend %extend_4;
+}
+
+.heading-d {
+  @extend %extend_4;
+}
+
+h5 {
+  @extend %extend_5;
+}
+
+.heading-e {
+  @extend %extend_5;
+}
+
+h6 {
+  @extend %extend_6;
+}
+
+.heading-f {
+  @extend %extend_6;
+}
+
 p {
   margin: 0 0 1.2em;
 }
+
 del {
   text-decoration: line-through;
 }
@@ -90,63 +180,91 @@ del {
 blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
-  border-left: 1px solid #bbb; /* LTR */
+  border-left: 1px solid #bbb;
   background: #f7f7f7;
   font-style: italic;
+
+  &:before {
+    margin-right: 0.2em;
+    content: "\201C";
+    vertical-align: -0.4em;
+    color: #bbb;
+    font-size: 3em;
+    line-height: 0.1em;
+  }
+
+  &:after {
+    content: "\201D";
+    vertical-align: -0.45em;
+    color: #bbb;
+    font-size: 3em;
+    line-height: 0.1em;
+  }
+
+  >p:first-child {
+    display: inline;
+  }
 }
-[dir="rtl"] blockquote {
-  border-right: 1px solid #bbb;
-  border-left: none;
+
+[dir="rtl"] {
+  blockquote {
+    border-right: 1px solid #bbb;
+    border-left: none;
+
+    &:before {
+      margin-right: 0;
+      margin-left: 0.2em;
+      content: "\201D";
+    }
+
+    &:after {
+      content: "\201C";
+    }
+  }
+
+  ul {
+    padding: 0 1em 0.25em 0;
+
+    ul {
+      padding: 0 1em 0.25em 0;
+    }
+  }
+
+  ol {
+    padding: 0 1em 0.25em 0;
+
+    ol {
+      padding: 0 1em 0.25em 0;
+    }
+  }
 }
-blockquote:before {
-  margin-right: 0.2em; /* LTR */
-  content: "\201C";
-  vertical-align: -0.4em;
-  color: #bbb;
-  font-size: 3em;
-  line-height: 0.1em;
-}
-[dir="rtl"] blockquote:before {
-  margin-right: 0;
-  margin-left: 0.2em;
-  content: "\201D";
-}
-blockquote:after {
-  content: "\201D";
-  vertical-align: -0.45em;
-  color: #bbb;
-  font-size: 3em;
-  line-height: 0.1em;
-}
-[dir="rtl"] blockquote:after {
-  content: "\201C";
-}
-blockquote > p:first-child {
-  display: inline;
-}
+
 .feed-icon {
   display: block;
-  margin: 25px 0 0 0;
+  margin: 25px 0 0;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
-ul,
+
+ul {
+  margin: 0;
+  padding: 0 0 0.25em 1em;
+
+  ul {
+    margin: 0;
+    padding: 0 0 0.25em 1em;
+  }
+}
+
 ol {
   margin: 0;
-  padding: 0 0 0.25em 1em; /* LTR */
-}
-[dir="rtl"] ul,
-[dir="rtl"] ol {
-  padding: 0 1em 0.25em 0;
-}
-ol ol,
-ul ul {
-  margin: 0;
-  padding: 0 0 0.25em 1em; /* LTR */
-}
-[dir="rtl"] ol ol,
-[dir="rtl"] ul ul {
-  padding: 0 1em 0.25em 0;
+  padding: 0 0 0.25em 1em;
+
+  ol {
+    margin: 0;
+    padding: 0 0 0.25em 1em;
+  }
 }
