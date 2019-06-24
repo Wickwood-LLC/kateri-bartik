@@ -42,7 +42,7 @@
 
 @media all and (min-width: 901px) {
   .site-branding__name {
-    font-size: 1.821em;
+    font-size: 2em;
   }
 }
 
@@ -50,7 +50,7 @@
   margin-top: 7px;
   word-spacing: 0.1em;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.8em;
+  font-size: 1.7em;
   font-style: italic;
 }
 /*# sourceMappingURL=site-branding.css.map */
