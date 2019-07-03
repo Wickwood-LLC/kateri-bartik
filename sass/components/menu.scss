@@ -13,3 +13,9 @@ ul.menu {
 [dir="rtl"] ul.menu {
   margin: 0;
 }
+
+.menu--menu-current-year-conference {
+	.menu-item--expanded {
+		list-style: none;
+	}
+}

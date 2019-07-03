@@ -2,7 +2,6 @@
  * @file
  * Styles for menus in Bartik.
  */
-
 /* This is needed to override ul.menu styles in menu.theme.css */
 ul.menu {
   margin: 0;
@@ -13,3 +12,8 @@ ul.menu {
 [dir="rtl"] ul.menu {
   margin: 0;
 }
+
+.menu--menu-current-year-conference .menu-item--expanded {
+  list-style: none;
+}
+/*# sourceMappingURL=menu.css.map */
