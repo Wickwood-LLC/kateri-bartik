@@ -182,4 +182,12 @@ ol ol {
   margin: 0;
   padding: 0 0 0.25em 1em;
 }
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 1em;
+}
 /*# sourceMappingURL=elements.css.map */
