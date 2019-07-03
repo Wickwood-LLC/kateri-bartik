@@ -2,6 +2,7 @@
  * @file
  * Visual styles for the site branding block in Bartik.
  */
+ @import "../base/_mixins.scss";
 
 .site-branding__logo {
   display: inline-block;
@@ -22,14 +23,11 @@
 }
 .site-branding__name {
   color: #686868;
-  font-size: 1.6em;
   line-height: 1;
   font-variant: small-caps;
   font-style: italic;
-
-  @media all and(min-width: 901px) {
-    font-size: 2em;
-  }
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(320px, 950px, 1.6em, 2em);
 }
 .site-branding__slogan {
   margin-top: 7px;
