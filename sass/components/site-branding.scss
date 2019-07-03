@@ -33,12 +33,9 @@
   margin-top: 7px;
   word-spacing: 0.1em;
   font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
-  font-size: 1.4em;
   font-style: italic;
-
-  @media all and(min-width: 901px) {
-    font-size: 1.7em;
-  }
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(320px, 950px, 22px, 27px);
 }
 [dir="rtl"] .site-branding__logo {
   margin-right: 0;
