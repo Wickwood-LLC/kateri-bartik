@@ -5,14 +5,8 @@
 .site-branding__logo {
   display: inline-block;
   margin-right: 1em;
-  /* LTR */
   margin-bottom: 0.286em;
   border-bottom: 0;
-}
-
-[dir="rtl"] .site-branding__logo {
-  margin-right: 0;
-  margin-left: 1em;
 }
 
 .site-branding__text {
@@ -49,8 +43,19 @@
 .site-branding__slogan {
   margin-top: 7px;
   word-spacing: 0.1em;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.7em;
+  font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
+  font-size: 1.4em;
   font-style: italic;
+}
+
+@media all and (min-width: 901px) {
+  .site-branding__slogan {
+    font-size: 1.7em;
+  }
+}
+
+[dir="rtl"] .site-branding__logo {
+  margin-right: 0;
+  margin-left: 1em;
 }
 /*# sourceMappingURL=site-branding.css.map */

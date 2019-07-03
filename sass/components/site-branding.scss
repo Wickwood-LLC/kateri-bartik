@@ -5,27 +5,18 @@
 
 .site-branding__logo {
   display: inline-block;
-  margin-right: 1em; /* LTR */
+  margin-right: 1em;
   margin-bottom: 0.286em;
   border-bottom: 0;
-}
-[dir="rtl"] .site-branding__logo {
-  margin-right: 0;
-  margin-left: 1em;
 }
 .site-branding__text {
   display: inline-block;
   vertical-align: top;
-}
 
-@media all and (min-width: 461px) {
-  .site-branding__text {
+  @media all and(min-width: 461px) {
     margin-bottom: 1.857em;
   }
-}
-
-@media all and (min-width: 901px) {
-  .site-branding__text {
+  @media all and(min-width: 901px) {
     padding: 1.286em 0 0;
   }
 }
@@ -35,17 +26,23 @@
   line-height: 1;
   font-variant: small-caps;
   font-style: italic;
-}
 
-@media all and (min-width: 901px) {
-  .site-branding__name {
+  @media all and(min-width: 901px) {
     font-size: 2em;
   }
 }
 .site-branding__slogan {
   margin-top: 7px;
   word-spacing: 0.1em;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.7em;
+  font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
+  font-size: 1.4em;
   font-style: italic;
+
+  @media all and(min-width: 901px) {
+    font-size: 1.7em;
+  }
+}
+[dir="rtl"] .site-branding__logo {
+  margin-right: 0;
+  margin-left: 1em;
 }
