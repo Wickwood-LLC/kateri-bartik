@@ -35,12 +35,12 @@
 }
 
 .site-branding__name {
-  font-size: 26px;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 320px) {
   .site-branding__name {
-    font-size: calc(26px + 10 * ((100vw - 320px) / 930));
+    font-size: calc(20px + 16 * ((100vw - 320px) / 930));
   }
 }
 
@@ -58,12 +58,12 @@
 }
 
 .site-branding__slogan {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 320px) {
   .site-branding__slogan {
-    font-size: calc(22px + 5 * ((100vw - 320px) / 930));
+    font-size: calc(18px + 9 * ((100vw - 320px) / 930));
   }
 }
 
@@ -77,4 +77,5 @@
   margin-right: 0;
   margin-left: 1em;
 }
+
 /*# sourceMappingURL=site-branding.css.map */
