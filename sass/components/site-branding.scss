@@ -28,7 +28,7 @@
   font-style: italic;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 1300px, 20px, 36px);
+  @include fluid-type(320px, 1300px, 2vw, 3vw);
 }
 .site-branding__slogan {
   margin-top: 7px;
@@ -36,7 +36,7 @@
   font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
   font-style: italic;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 1300px, 18px, 27px);
+  @include fluid-type(320px, 1300px, 1.7vw, 2.7vw);
 }
 [dir="rtl"] .site-branding__logo {
   margin-right: 0;
