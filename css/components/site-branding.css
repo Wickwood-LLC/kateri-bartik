@@ -32,18 +32,24 @@
   font-variant: small-caps;
   font-style: italic;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 2.2vw;
 }
 
 @media (min-width: 320px) {
   .site-branding__name {
-    font-size: calc(24px + 12 * (100vw - 320px) / 980);
+    font-size: calc(2.2vw + 1 * (100vw - 320px) / 880);
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .site-branding__name {
-    font-size: 36px;
+    font-size: 3.2vw;
+  }
+}
+
+@media (min-width: 1201px) {
+  .site-branding__name {
+    font-size: 38px;
   }
 }
 
@@ -52,18 +58,24 @@
   word-spacing: 0.1em;
   font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
   font-style: italic;
-  font-size: 18px;
+  font-size: 2vw;
 }
 
 @media (min-width: 320px) {
   .site-branding__slogan {
-    font-size: calc(18px + 8 * (100vw - 320px) / 980);
+    font-size: calc(2vw + 1 * (100vw - 320px) / 880);
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .site-branding__slogan {
-    font-size: 26px;
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1201px) {
+  .site-branding__slogan {
+    font-size: 28px;
   }
 }
 

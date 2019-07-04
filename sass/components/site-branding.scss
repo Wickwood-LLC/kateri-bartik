@@ -3,6 +3,7 @@
  * Visual styles for the site branding block in Bartik.
  */
  @import "../base/_mixins.scss";
+ @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
 .site-branding__logo {
   display: inline-block;
@@ -28,7 +29,10 @@
   font-style: italic;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(font-size, 320px, 1300px, 24px, 36px);
+  @include fluid-type(font-size, 320px, 1200px, 2.2vw, 3.2vw);
+  @include breakpoint(1201px){
+    font-size: 38px;
+  }
 }
 .site-branding__slogan {
   margin-top: 7px;
@@ -36,7 +40,10 @@
   font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
   font-style: italic;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(font-size, 320px, 1300px, 18px, 26px);
+  @include fluid-type(font-size, 320px, 1200px, 2vw, 3vw);
+  @include breakpoint(1201px){
+    font-size: 28px;
+  }
 }
 [dir="rtl"] .site-branding__logo {
   margin-right: 0;
