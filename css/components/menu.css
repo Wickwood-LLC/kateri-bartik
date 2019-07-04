@@ -17,7 +17,8 @@ ul.menu {
   padding: 0;
 }
 
-.sidebar .block-menu .menu-item--expanded {
+.sidebar .block-menu .menu-item--expanded,
+.sidebar .block-menu .menu-item--collapsed {
   list-style: none;
 }
 /*# sourceMappingURL=menu.css.map */

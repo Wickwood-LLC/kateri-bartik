@@ -18,7 +18,8 @@ ul.menu {
 	.content > ul.menu {
 		padding: 0;
 	}
-	.menu-item--expanded {
+	.menu-item--expanded,
+	.menu-item--collapsed {
 		list-style: none;
 	}
 }
