@@ -16,4 +16,8 @@ ul.menu {
 .menu--menu-current-year-conference .menu-item--expanded {
   list-style: none;
 }
+
+.sidebar .block-menu .content > ul.menu {
+  padding: 0;
+}
 /*# sourceMappingURL=menu.css.map */
