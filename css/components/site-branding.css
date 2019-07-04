@@ -32,6 +32,19 @@
   font-variant: small-caps;
   font-style: italic;
   font-weight: bold;
+  font-size: 2vw;
+}
+
+@media (min-width: 320px) {
+  .site-branding__name {
+    font-size: calc(2vw + 1 * (100vw - 320px) / 980);
+  }
+}
+
+@media (min-width: 1300px) {
+  .site-branding__name {
+    font-size: 3vw;
+  }
 }
 
 .site-branding__slogan {
@@ -39,6 +52,19 @@
   word-spacing: 0.1em;
   font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
   font-style: italic;
+  font-size: 1.7vw;
+}
+
+@media (min-width: 320px) {
+  .site-branding__slogan {
+    font-size: calc(1.7vw + 1 * (100vw - 320px) / 980);
+  }
+}
+
+@media (min-width: 1300px) {
+  .site-branding__slogan {
+    font-size: 2.7vw;
+  }
 }
 
 [dir="rtl"] .site-branding__logo {
