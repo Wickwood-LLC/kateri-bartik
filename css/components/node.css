@@ -2,6 +2,10 @@
  * @file
  * Visual styles for Bartik's node component.
  */
+.node__title {
+  font-weight: bold;
+}
+
 .node__title a:hover {
   color: #803dea;
 }
