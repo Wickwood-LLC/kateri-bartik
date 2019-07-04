@@ -14,12 +14,11 @@ ul.menu {
   margin: 0;
 }
 
-.menu--menu-current-year-conference {
+.sidebar .block-menu {
+	.content > ul.menu {
+		padding: 0;
+	}
 	.menu-item--expanded {
 		list-style: none;
 	}
-}
-
-.sidebar .block-menu .content > ul.menu {
-	padding: 0;
 }
