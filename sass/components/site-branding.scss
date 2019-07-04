@@ -26,8 +26,9 @@
   line-height: 1;
   font-variant: small-caps;
   font-style: italic;
+  font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 950px, 26px, 32px);
+  @include fluid-type(320px, 950px, 26px, 36px);
 }
 .site-branding__slogan {
   margin-top: 7px;
