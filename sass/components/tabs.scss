@@ -1,47 +1,21 @@
 /* --------------- System Tabs  --------------- */
 
-div.tabs {
-  margin-bottom: 20px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.tabs ul.primary {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.tabs ul.primary li a {
-  display: block;
-  height: 1.8em;
-  padding: 0 10px 3px;
-  color: #000;
-  border-width: 1px;
-  border-style: solid solid none solid;
-  border-color: #bbb;
-  background-color: #ededed;
-  text-shadow: 0 1px 0 #fff;
-  font-size: 0.929em;
-  line-height: 1.9;
-}
-.tabs ul.primary li.is-active a {
-  border: 1px solid #bbb;
-  background-color: #fff;
-}
-
-@media screen and (max-width: 37.5em) { /* 600px */
+@media screen and(max-width: 37.5em) {
   .tabs ul.primary {
     border-bottom: 1px solid #bbb;
-  }
-  .tabs ul.primary li {
-    display: block;
-    margin: 0;
-  }
-  .tabs ul.primary li a {
-    padding: 5px 10px;
-  }
-  .tabs ul.primary li.is-active a {
-    border-bottom: none;
+    li {
+      display: block;
+      margin: 0;
+      a {
+        padding: 5px 10px;
+      }
+      &.is-active a {
+        border-bottom: none;
+      }
+    }
   }
 }
-
-@media screen and (min-width: 37.5em) { /* 600px */
+@media screen and(min-width: 37.5em) {
   .tabs ul.primary {
     overflow: hidden;
     height: auto;
@@ -52,63 +26,95 @@ div.tabs {
     border-collapse: collapse;
     background: transparent url(../../images/tabs-border.png) repeat-x left bottom;
     line-height: normal;
-  }
-  .tabs ul.primary li {
-    display: block;
-    float: left; /* LTR */
-    margin: 0 5px 0 0; /* LTR */
-    vertical-align: bottom;
+    li {
+      display: block;
+      float: left;
+      margin: 0 5px 0 0;
+      vertical-align: bottom;
+      a {
+        float: left;
+        //Instead of the line below you could use @include border-top-left-radius($radius)
+        border-top-left-radius: 6px;
+        //Instead of the line below you could use @include border-top-right-radius($radius)
+        border-top-right-radius: 6px;
+      }
+      &.is-active a {
+        border-bottom: 1px solid #fff;
+      }
+    }
   }
   [dir="rtl"] .tabs ul.primary li {
     float: right;
     margin: 0 0 0 5px;
   }
-  .tabs ul.primary li a {
-    float: left; /* not LTR */
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-  }
-  .tabs ul.primary li.is-active a {
-    border-bottom: 1px solid #fff;
-  }
 }
-.tabs ul.secondary {
-  overflow: hidden;
-  margin: 5px;
-  padding: 0.5em 0;
-  border-bottom: none;
+div.tabs {
+  margin-bottom: 20px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-.tabs ul.secondary li {
-  display: block;
-  float: left; /* LTR */
-  margin: 0;
-  padding: 0 1em;
-  border-right: 1px solid #ccc; /* LTR */
+.tabs ul {
+  &.primary {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    li {
+      a {
+        display: block;
+        height: 1.8em;
+        padding: 0 10px 3px;
+        color: #000;
+        border-width: 1px;
+        border-style: solid solid none solid;
+        border-color: #bbb;
+        background-color: #ededed;
+        //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        text-shadow: 0 1px 0 #fff;
+        font-size: 0.929em;
+        line-height: 1.9;
+      }
+      &.is-active a {
+        border: 1px solid #bbb;
+        background-color: #fff;
+      }
+    }
+  }
+  &.secondary {
+    overflow: hidden;
+    margin: 5px;
+    padding: 0.5em 0;
+    border-bottom: none;
+    li {
+      display: block;
+      float: left;
+      margin: 0;
+      padding: 0 1em;
+      border-right: 1px solid #ccc;
+      &:last-child {
+        border-right: none;
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+      a {
+        display: inline;
+        padding: 0.25em 0.5em;
+        text-decoration: none;
+        &.is-active {
+          border-bottom: none;
+          //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+          border-radius: 5px;
+          background: #f2f2f2;
+        }
+      }
+    }
+  }
 }
 [dir="rtl"] .tabs ul.secondary li {
   float: right;
   border-right: none;
   border-left: 1px solid #ccc;
-}
-.tabs ul.secondary li:last-child {
-  border-right: none; /* LTR */
-}
-[dir="rtl"] .tabs ul.secondary li:last-child {
-  border-left: none;
-}
-.tabs ul.secondary li:first-child {
-  padding-left: 0; /* LTR */
-}
-[dir="rtl"] .tabs ul.secondary li:first-child {
-  padding-right: 0;
-}
-.tabs ul.secondary li a {
-  display: inline;
-  padding: 0.25em 0.5em;
-  text-decoration: none;
-}
-.tabs ul.secondary li a.is-active {
-  border-bottom: none;
-  border-radius: 5px;
-  background: #f2f2f2;
+  &:last-child {
+    border-left: none;
+  }
+  &:first-child {
+    padding-right: 0;
+  }
 }

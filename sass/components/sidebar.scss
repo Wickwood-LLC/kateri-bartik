@@ -1,9 +1,9 @@
 /* ------------------ Sidebar ----------------- */
 
-@media all and (min-width: 560px) {
+@media all and(min-width: 560px) {
   .sidebar {
     position: relative;
-    float: left; /* LTR */
+    float: left;
     width: 50%;
   }
   [dir="rtl"] .sidebar {
@@ -13,56 +13,64 @@
     width: 100%;
   }
 }
-
-@media all and (min-width: 851px) {
-  .layout-one-sidebar .sidebar {
-    width: 25%;
-  }
+@media all and(min-width: 851px) {
   #sidebar-first {
     width: 25%;
-    margin-left: -100%; /* LTR */
+    margin-left: -100%;
   }
-  [dir="rtl"] #sidebar-first {
-    margin-right: -100%;
-    margin-left: 0;
+  [dir="rtl"] {
+    #sidebar-first {
+      margin-right: -100%;
+      margin-left: 0;
+    }
+    #sidebar-second {
+      margin-right: -25%;
+      margin-left: 0;
+    }
   }
   #sidebar-second {
     clear: none;
     width: 25%;
-    margin-left: -25%; /* LTR */
+    margin-left: -25%;
   }
-  [dir="rtl"] #sidebar-second {
-    margin-right: -25%;
-    margin-left: 0;
+  .layout-one-sidebar .sidebar {
+    width: 25%;
   }
 }
-
-.sidebar .section {
-  padding: 10px 15px 0;
-}
-.sidebar .block {
-  margin: 0 0 20px;
-  padding: 15px 20px;
-  border-width: 1px;
-  border-style: solid;
-}
-.sidebar h2 {
-  margin: 0 0 0.5em;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #d6d6d6;
-  text-shadow: 0 1px 0 #fff;
-  font-size: 1.071em;
-  line-height: 1.2;
-}
-.sidebar .block .content {
-  font-size: 0.914em;
-  line-height: 1.4;
-}
-.sidebar tbody {
-  border: none;
-}
-.sidebar tr.even,
-.sidebar tr.odd {
-  border-bottom: 1px solid #d6d6d6;
-  background: none;
+.sidebar {
+  .section {
+    padding: 10px 15px 0;
+  }
+  .block {
+    margin: 0 0 20px;
+    padding: 15px 20px;
+    border-width: 1px;
+    border-style: solid;
+    .content {
+      font-size: 1em;
+      line-height: 1.4;
+    }
+  }
+  h2 {
+    margin: 0 0 0.5em;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d6d6d6;
+    //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 0 1px 0 #fff;
+    font-size: 1.071em;
+    line-height: 1.2;
+  }
+  tbody {
+    border: none;
+  }
+  tr {
+    &.even {
+      border-bottom: 1px solid #d6d6d6;
+      background: none;
+    }
+    &.odd {
+      border-bottom: 1px solid #d6d6d6;
+      background: none;
+    }
+  }
 }
