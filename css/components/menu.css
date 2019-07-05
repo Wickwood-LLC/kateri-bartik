@@ -13,12 +13,13 @@ ul.menu {
   margin: 0;
 }
 
-.sidebar .block-menu .content > ul.menu {
+#block-kateri-bartik-currentyearconference .content > ul.menu {
   padding: 0;
 }
 
-.sidebar .block-menu .menu-item--expanded,
-.sidebar .block-menu .menu-item--collapsed {
+#block-kateri-bartik-currentyearconference .menu-item--expanded,
+#block-kateri-bartik-currentyearconference .menu-item--collapsed {
   list-style: none;
 }
+
 /*# sourceMappingURL=menu.css.map */
