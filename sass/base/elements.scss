@@ -225,7 +225,10 @@ blockquote {
 img {
   max-width: 100%;
   height: auto;
-  border: 1px solid #785fa0;
+  
+  main#content & {
+    border: 1px solid #785fa0;
+  }
 }
 
 ul {
