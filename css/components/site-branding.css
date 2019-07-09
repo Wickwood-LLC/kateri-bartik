@@ -29,7 +29,7 @@
 
 @media (min-width: 418px) {
   .site-branding__text {
-    text-align: left;
+    text-align: initial;
   }
 }
 
@@ -39,16 +39,19 @@
   font-variant: small-caps;
   font-style: italic;
   font-weight: bold;
+}
+
+.site-branding__name {
   font-size: 24px;
 }
 
-@media (min-width: 740px) {
+@media screen and (min-width: 740px) {
   .site-branding__name {
-    font-size: calc(24px + 14 * (100vw - 740px) / 460);
+    font-size: calc(24px + 14 * ((100vw - 740px) / 460));
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .site-branding__name {
     font-size: 38px;
   }
@@ -59,16 +62,19 @@
   word-spacing: 0.1em;
   font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
   font-style: italic;
+}
+
+.site-branding__slogan {
   font-size: 14px;
 }
 
-@media (min-width: 740px) {
+@media screen and (min-width: 740px) {
   .site-branding__slogan {
-    font-size: calc(14px + 10 * (100vw - 740px) / 460);
+    font-size: calc(14px + 10 * ((100vw - 740px) / 460));
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .site-branding__slogan {
     font-size: 24px;
   }

@@ -37,7 +37,7 @@ h1, .heading-a {
   color: #000;
   font-weight: inherit;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(font-size, 320px, 980px, 1.5em, 2em);
+  @include fluid-type(320px, 980px, 1.5em, 2em);
 
   a {
     border-bottom: none;
@@ -48,7 +48,7 @@ h2, .heading-b {
   font-size: 1.143em;
   font-weight: inherit;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(font-size, 320px, 980px, 1.17em, 1.5em);
+  @include fluid-type(320px, 980px, 1.17em, 1.5em);
   a {
     border-bottom: none;
   }
@@ -58,14 +58,14 @@ h3, .heading-c {
   font-size: 1.092em;
   font-weight: inherit;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(font-size, 320px, 980px, 1.33em, 1.17em);
+  @include fluid-type(320px, 980px, 1.33em, 1.17em);
 }
 h4, .heading-d {
   margin: 1em 0 0.5em;
   font-size: 1.05em;
   font-weight: inherit;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(font-size, 320px, 980px, 0.83em, 1em);
+  @include fluid-type(320px, 980px, 0.83em, 1em);
 }
 h5, .heading-e {
   margin: 1em 0 0.5em;
@@ -74,7 +74,7 @@ h5, .heading-e {
   font-size: 0.889em;
   font-weight: inherit;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(font-size, 320px, 980px, 0.67em, 0.83em);
+  @include fluid-type(320px, 980px, 0.67em, 0.83em);
 }
 h6, .heading-f {
   margin: 1em 0 0.5em;
@@ -82,12 +82,12 @@ h6, .heading-f {
   text-transform: uppercase;
   font-weight: inherit;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(font-size, 320px, 980px, 0.5em, 0.67em);
+  @include fluid-type(320px, 980px, 0.5em, 0.67em);
 }
 p {
   margin: 0 0 1.2em;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(font-size, 320px, 1200px, 0.75em, 1em);
+  @include fluid-type(320px, 1200px, 0.75em, 1em);
 }
 del {
   text-decoration: line-through;
