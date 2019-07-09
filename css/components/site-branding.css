@@ -28,9 +28,9 @@
   font-size: 24px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 740px) {
   .site-branding__name {
-    font-size: calc(24px + 14 * (100vw - 320px) / 880);
+    font-size: calc(24px + 14 * (100vw - 740px) / 460);
   }
 }
 
@@ -48,19 +48,13 @@
   font-size: 14px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 740px) {
   .site-branding__slogan {
-    font-size: calc(14px + 10 * (100vw - 320px) / 880);
+    font-size: calc(14px + 10 * (100vw - 740px) / 460);
   }
 }
 
 @media (min-width: 1200px) {
-  .site-branding__slogan {
-    font-size: 24px;
-  }
-}
-
-@media (min-width: 1201px) {
   .site-branding__slogan {
     font-size: 24px;
   }
