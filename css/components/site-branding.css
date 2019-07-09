@@ -4,8 +4,15 @@
  */
 .site-branding {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 418px) {
+  .site-branding {
+    flex-flow: row nowrap;
+  }
 }
 
 .site-branding__logo {
@@ -17,6 +24,13 @@
 
 .site-branding__text {
   display: inline-block;
+  text-align: center;
+}
+
+@media (min-width: 418px) {
+  .site-branding__text {
+    text-align: left;
+  }
 }
 
 .site-branding__name {
