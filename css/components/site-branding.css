@@ -25,12 +25,12 @@
   font-variant: small-caps;
   font-style: italic;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 @media (min-width: 320px) {
   .site-branding__name {
-    font-size: calc(16px + 22 * (100vw - 320px) / 880);
+    font-size: calc(24px + 14 * (100vw - 320px) / 880);
   }
 }
 
@@ -45,18 +45,18 @@
   word-spacing: 0.1em;
   font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
   font-style: italic;
-  font-size: 2vw;
+  font-size: 14px;
 }
 
 @media (min-width: 320px) {
   .site-branding__slogan {
-    font-size: calc(2vw + 1 * (100vw - 320px) / 880);
+    font-size: calc(14px + 10 * (100vw - 320px) / 880);
   }
 }
 
 @media (min-width: 1200px) {
   .site-branding__slogan {
-    font-size: 3vw;
+    font-size: 24px;
   }
 }
 
