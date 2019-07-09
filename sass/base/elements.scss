@@ -2,166 +2,102 @@
  * @file
  * Overall specifications for Bartik.
  */
+ @import "../base/_mixins.scss";
+ @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
 html {
   height: 100%;
 }
-
 body {
   min-height: 100%;
   word-wrap: break-word;
-  font-family: Georgia, Times New Roman, Times, serif;
+  font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
   line-height: 1.5;
 }
-
 a {
   text-decoration: none;
 }
-
 .link {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   &:hover {
     text-decoration: none;
     border-bottom-style: solid;
   }
-
   &:active {
     text-decoration: none;
     border-bottom-style: solid;
   }
-
   &:focus {
     text-decoration: none;
     border-bottom-style: solid;
   }
 }
-
-//@extend-elements
-//original selectors
-//h1, .heading-a
-%extend_1 {
+h1, .heading-a {
   margin: 1em 0 0.5em;
   color: #000;
-  font-size: 1.357em;
   font-weight: inherit;
-}
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(font-size, 320px, 980px, 1.5em, 2em);
 
-//original selectors
-//h2, .heading-b
-%extend_2 {
+  a {
+    border-bottom: none;
+  }
+}
+h2, .heading-b {
   margin: 1em 0 0.5em;
   font-size: 1.143em;
   font-weight: inherit;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(font-size, 320px, 980px, 1.17em, 1.5em);
+  a {
+    border-bottom: none;
+  }
 }
-
-//original selectors
-//h3, .heading-c
-%extend_3 {
+h3, .heading-c {
   margin: 1em 0 0.5em;
   font-size: 1.092em;
   font-weight: inherit;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(font-size, 320px, 980px, 1.33em, 1.17em);
 }
-
-//original selectors
-//h4, .heading-d
-%extend_4 {
+h4, .heading-d {
   margin: 1em 0 0.5em;
   font-size: 1.05em;
   font-weight: inherit;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(font-size, 320px, 980px, 0.83em, 1em);
 }
-
-//original selectors
-//h5, .heading-e
-%extend_5 {
+h5, .heading-e {
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-size: 0.889em;
   font-weight: inherit;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(font-size, 320px, 980px, 0.67em, 0.83em);
 }
-
-//original selectors
-//h6, .heading-f
-%extend_6 {
+h6, .heading-f {
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-size: 0.67em;
   font-weight: inherit;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(font-size, 320px, 980px, 0.5em, 0.67em);
 }
-
-h1 {
-  @extend %extend_1;
-
-  a {
-    border-bottom: none;
-  }
-}
-
-h2 {
-  @extend %extend_2;
-
-  a {
-    border-bottom: none;
-  }
-}
-
-.heading-a {
-  @extend %extend_1;
-}
-
-.heading-b {
-  @extend %extend_2;
-}
-
-h3 {
-  @extend %extend_3;
-}
-
-.heading-c {
-  @extend %extend_3;
-}
-
-h4 {
-  @extend %extend_4;
-}
-
-.heading-d {
-  @extend %extend_4;
-}
-
-h5 {
-  @extend %extend_5;
-}
-
-.heading-e {
-  @extend %extend_5;
-}
-
-h6 {
-  @extend %extend_6;
-}
-
-.heading-f {
-  @extend %extend_6;
-}
-
 p {
   margin: 0 0 1.2em;
+  // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
+  @include fluid-type(font-size, 320px, 1200px, 0.75em, 1em);
 }
-
 del {
   text-decoration: line-through;
 }
-
 blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   border-left: 1px solid #bbb;
   background: #f7f7f7;
   font-style: italic;
-
   &:before {
     margin-right: 0.2em;
     content: "\201C";
@@ -170,7 +106,6 @@ blockquote {
     font-size: 3em;
     line-height: 0.1em;
   }
-
   &:after {
     content: "\201D";
     vertical-align: -0.45em;
@@ -178,82 +113,66 @@ blockquote {
     font-size: 3em;
     line-height: 0.1em;
   }
-
-  >p:first-child {
+  > p:first-child {
     display: inline;
   }
 }
-
 [dir="rtl"] {
   blockquote {
     border-right: 1px solid #bbb;
     border-left: none;
-
     &:before {
       margin-right: 0;
       margin-left: 0.2em;
       content: "\201D";
     }
-
     &:after {
       content: "\201C";
     }
   }
-
   ul {
     padding: 0 1em 0.25em 0;
-
     ul {
       padding: 0 1em 0.25em 0;
     }
   }
-
   ol {
     padding: 0 1em 0.25em 0;
-
     ol {
       padding: 0 1em 0.25em 0;
     }
   }
 }
-
 .feed-icon {
   display: block;
   margin: 25px 0 0;
 }
-
 img {
   max-width: 100%;
   height: auto;
-  
-  main#content & {
-    border: 1px solid #785fa0;
-  }
 }
-
 ul {
   margin: 0;
   padding: 0 0 0.25em 1em;
-
   ul {
     margin: 0;
     padding: 0 0 0.25em 1em;
   }
 }
-
 ol {
   margin: 0;
   padding: 0 0 0.25em 1em;
-
   ol {
     margin: 0;
     padding: 0 0 0.25em 1em;
   }
 }
-
 dt {
   font-weight: bold;
 }
 dd {
   margin-bottom: 1em;
+}
+main#content img {
+  border: 1px solid #785fa0;
 }
