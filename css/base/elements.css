@@ -39,7 +39,23 @@ a {
 h1, .heading-a {
   margin: 1em 0 0.5em;
   color: #000;
-  font-weight: inherit;
+  font-weight: bold;
+}
+
+h1, .heading-a {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 320px) {
+  h1, .heading-a {
+    font-size: calc(24px + 8 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h1, .heading-a {
+    font-size: 32px;
+  }
 }
 
 h1 a, .heading-a a {
@@ -49,7 +65,23 @@ h1 a, .heading-a a {
 h2, .heading-b {
   margin: 1em 0 0.5em;
   font-size: 1.143em;
-  font-weight: inherit;
+  font-weight: bold;
+}
+
+h2, .heading-b {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  h2, .heading-b {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h2, .heading-b {
+    font-size: 24px;
+  }
 }
 
 h2 a, .heading-b a {
@@ -59,13 +91,45 @@ h2 a, .heading-b a {
 h3, .heading-c {
   margin: 1em 0 0.5em;
   font-size: 1.092em;
-  font-weight: inherit;
+  font-weight: bold;
+}
+
+h3, .heading-c {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  h3, .heading-c {
+    font-size: calc(16px + 2 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h3, .heading-c {
+    font-size: 18px;
+  }
 }
 
 h4, .heading-d {
   margin: 1em 0 0.5em;
   font-size: 1.05em;
-  font-weight: inherit;
+  font-weight: bold;
+}
+
+h4, .heading-d {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  h4, .heading-d {
+    font-size: calc(14px + 2 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h4, .heading-d {
+    font-size: 16px;
+  }
 }
 
 h5, .heading-e {
@@ -73,18 +137,66 @@ h5, .heading-e {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-size: 0.889em;
-  font-weight: inherit;
+  font-weight: bold;
+}
+
+h5, .heading-e {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 320px) {
+  h5, .heading-e {
+    font-size: calc(10px + 4 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h5, .heading-e {
+    font-size: 14px;
+  }
 }
 
 h6, .heading-f {
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-weight: inherit;
+  font-weight: bold;
+}
+
+h6, .heading-f {
+  font-size: 8px;
+}
+
+@media screen and (min-width: 320px) {
+  h6, .heading-f {
+    font-size: calc(8px + 2 * ((100vw - 320px) / 660));
+  }
+}
+
+@media screen and (min-width: 980px) {
+  h6, .heading-f {
+    font-size: 10px;
+  }
 }
 
 p {
   margin: 0 0 1.2em;
+}
+
+p {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  p {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  p {
+    font-size: 16px;
+  }
 }
 
 del {

@@ -2,7 +2,7 @@
  * @file
  * Overall specifications for Bartik.
  */
- @import "../base/_mixins.scss";
+ @import "mixins";
  @import "../../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
 html {
@@ -35,9 +35,9 @@ a {
 h1, .heading-a {
   margin: 1em 0 0.5em;
   color: #000;
-  font-weight: inherit;
+  font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 1.5em, 2em);
+  @include fluid-type(320px, 980px, 24px, 32px);
 
   a {
     border-bottom: none;
@@ -46,9 +46,10 @@ h1, .heading-a {
 h2, .heading-b {
   margin: 1em 0 0.5em;
   font-size: 1.143em;
-  font-weight: inherit;
+  font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 1.17em, 1.5em);
+  @include fluid-type(320px, 980px, 18px, 24px);
+
   a {
     border-bottom: none;
   }
@@ -56,38 +57,38 @@ h2, .heading-b {
 h3, .heading-c {
   margin: 1em 0 0.5em;
   font-size: 1.092em;
-  font-weight: inherit;
+  font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 1.33em, 1.17em);
+  @include fluid-type(320px, 980px, 16px, 18px);
 }
 h4, .heading-d {
   margin: 1em 0 0.5em;
   font-size: 1.05em;
-  font-weight: inherit;
+  font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 0.83em, 1em);
+  @include fluid-type(320px, 980px, 14px, 16px);
 }
 h5, .heading-e {
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-size: 0.889em;
-  font-weight: inherit;
+  font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 0.67em, 0.83em);
+  @include fluid-type(320px, 980px, 10px, 14px);
 }
 h6, .heading-f {
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-weight: inherit;
+  font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 0.5em, 0.67em);
+  @include fluid-type(320px, 980px, 8px, 10px);
 }
 p {
   margin: 0 0 1.2em;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 1200px, 0.75em, 1em);
+  @include fluid-type(320px, 1200px, 12px, 16px);
 }
 del {
   text-decoration: line-through;
