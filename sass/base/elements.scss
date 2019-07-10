@@ -75,7 +75,7 @@ h5, .heading-e {
   font-size: 0.889em;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 10px, 14px);
+  @include fluid-type(320px, 980px, 14px, 16px);
 }
 h6, .heading-f {
   margin: 1em 0 0.5em;
@@ -83,7 +83,7 @@ h6, .heading-f {
   text-transform: uppercase;
   font-weight: bold;
   // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-  @include fluid-type(320px, 980px, 8px, 10px);
+  @include fluid-type(320px, 1200px, 12px, 16px);
 }
 p {
   margin: 0 0 1.2em;
