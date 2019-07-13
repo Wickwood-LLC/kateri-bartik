@@ -151,6 +151,16 @@ blockquote {
 img {
   max-width: 100%;
   height: auto;
+
+  main#content & {
+    border: 1px solid #785fa0;
+  }
+  main#content .align-left & {
+    margin-right: 1em;
+  }
+  main#content .align-right & {
+    margin-left: 1em;
+  }
 }
 ul {
   margin: 0;
@@ -173,7 +183,4 @@ dt {
 }
 dd {
   margin-bottom: 1em;
-}
-main#content img {
-  border: 1px solid #785fa0;
 }

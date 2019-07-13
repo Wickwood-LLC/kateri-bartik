@@ -273,6 +273,18 @@ img {
   height: auto;
 }
 
+main#content img {
+  border: 1px solid #785fa0;
+}
+
+main#content .align-left img {
+  margin-right: 1em;
+}
+
+main#content .align-right img {
+  margin-left: 1em;
+}
+
 ul {
   margin: 0;
   padding: 0 0 0.25em 1em;
@@ -299,9 +311,5 @@ dt {
 
 dd {
   margin-bottom: 1em;
-}
-
-main#content img {
-  border: 1px solid #785fa0;
 }
 /*# sourceMappingURL=elements.css.map */
