@@ -321,12 +321,14 @@ dd {
 }
 
 .fluid-columns {
-  -webkit-column-width: 200px;
-          column-width: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .fluid-columns > * {
-  display: inline-table;
+  flex: 0 1 220px;
 }
 
 .align-center {
