@@ -319,4 +319,13 @@ dt {
 dd {
   margin-bottom: 1em;
 }
+
+.fluid-columns {
+  -webkit-column-width: 200px;
+          column-width: 200px;
+}
+
+.fluid-columns > * {
+  display: inline-table;
+}
 /*# sourceMappingURL=elements.css.map */

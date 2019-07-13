@@ -191,3 +191,11 @@ dt {
 dd {
   margin-bottom: 1em;
 }
+
+.fluid-columns {
+  column-width: 200px;
+  
+  > * {
+    display: inline-table;
+  }
+}
