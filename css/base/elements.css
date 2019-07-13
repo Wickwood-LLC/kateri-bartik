@@ -38,6 +38,7 @@ a {
 
 h1, .heading-a {
   margin: 1em 0 0.5em;
+  clear: both;
   color: #000;
   font-weight: bold;
 }
@@ -63,6 +64,7 @@ h1 a, .heading-a a {
 }
 
 h2, .heading-b {
+  clear: both;
   margin: 1em 0 0.5em;
   font-size: 1.143em;
   font-weight: bold;
@@ -89,6 +91,7 @@ h2 a, .heading-b a {
 }
 
 h3, .heading-c {
+  clear: both;
   margin: 1em 0 0.5em;
   font-size: 1.092em;
   font-weight: bold;
@@ -111,6 +114,7 @@ h3, .heading-c {
 }
 
 h4, .heading-d {
+  clear: both;
   margin: 1em 0 0.5em;
   font-size: 1.05em;
   font-weight: bold;
@@ -133,6 +137,7 @@ h4, .heading-d {
 }
 
 h5, .heading-e {
+  clear: both;
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -157,6 +162,7 @@ h5, .heading-e {
 }
 
 h6, .heading-f {
+  clear: both;
   margin: 1em 0 0.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
