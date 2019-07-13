@@ -328,4 +328,8 @@ dd {
 .fluid-columns > * {
   display: inline-table;
 }
+
+.align-center {
+  text-align: center;
+}
 /*# sourceMappingURL=elements.css.map */
