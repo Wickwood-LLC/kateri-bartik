@@ -329,3 +329,11 @@ input.form-submit:focus {
     text-align: center;
   }
 }
+
+.g-recaptcha {
+  text-align: center;
+
+  > div {
+    display: inline-block;
+  } 
+}
