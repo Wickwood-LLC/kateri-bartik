@@ -23,3 +23,11 @@ ul.menu {
 		list-style: none;
 	}
 }
+
+#toolbar-administration {
+  nav[aria-label="User account actions"] {
+    ul.toolbar-menu {
+      float: right;
+    }
+  }
+}

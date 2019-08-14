@@ -21,4 +21,8 @@ ul.menu {
 #block-kateri-bartik-currentyearconference .menu-item--collapsed {
   list-style: none;
 }
+
+#toolbar-administration nav[aria-label="User account actions"] ul.toolbar-menu {
+  float: right;
+}
 /*# sourceMappingURL=menu.css.map */
