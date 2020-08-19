@@ -284,11 +284,11 @@ main#content img {
   margin-bottom: 0.5em;
 }
 
-main#content .align-left img {
+main#content .align-left {
   margin-right: 1em;
 }
 
-main#content .align-right img {
+main#content .align-right {
   margin-left: 1em;
 }
 

@@ -162,12 +162,12 @@ img {
     border: 1px solid #785fa0;
     margin-bottom: 0.5em;
   }
-  main#content .align-left & {
-    margin-right: 1em;
-  }
-  main#content .align-right & {
-    margin-left: 1em;
-  }
+}
+main#content .align-left {
+  margin-right: 1em;
+}
+main#content .align-right {
+  margin-left: 1em;
 }
 ul {
   margin: 0;
