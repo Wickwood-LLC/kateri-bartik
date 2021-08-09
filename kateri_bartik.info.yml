@@ -16,8 +16,7 @@ type: theme
 base theme: classy
 description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout. Customized for the Kateri Peace Conference website.'
 package: WWM
-version: 8.x-1.0
-core: 8.x
+core_version_requirement: ^8 || ^9
 libraries:
   - kateri_bartik/global-styling
 ckeditor_stylesheets:
