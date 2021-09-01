@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../sass/components/page-title.scss"],"names":[],"mappings":"AAAA;;;GAGG;AAEH;EACE,eAAc;EACd,iBAAgB;EAChB,kBAAiB;CAClB","file":"page-title.css"}
+{"version":3,"sources":["../../sass/components/page-title.scss","page-title.css"],"names":[],"mappings":"AAAA;;;ECGE;ADEF;EACE,cAAc;EACd,gBAAgB;EAChB,iBAAiB;EACjB,kBAAkB;ACApB","file":"page-title.css"}

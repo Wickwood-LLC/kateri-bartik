@@ -4,6 +4,7 @@
  */
 .node__title {
   font-weight: bold;
+  text-align: center;
 }
 
 .node__title a:hover {
