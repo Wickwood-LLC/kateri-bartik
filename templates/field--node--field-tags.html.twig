@@ -35,13 +35,30 @@
     label_display == 'inline' ? 'inline',
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
-  {% if not label_hidden %}
-    <h3{{ title_attributes.addClass(title_classes) }}>{{ label }}</h3>
-  {% endif %}
-  <ul class="links field__items">
+
+{% if label_hidden %}
+  {% if multiple %}
+    <{{ field_wrapper_tag }}{{ attributes.addClass(classes, 'links field__items').merge(field_wrapper_attributes) }}>
+      {% for item in items %}
+        <{{ field_item_wrapper_tag }}{{ item.attributes.addClass('field__item') }}>{{ item.content }}</{{ field_item_wrapper_tag }}>
+      {% endfor %}
+    </{{ field_wrapper_tag }}>
+  {% else %}
     {% for item in items %}
-      <li{{ item.attributes }}>{{ item.content }}</li>
+      <{{ field_item_wrapper_tag }}{{ attributes.addClass(classes, 'field__item').merge(item.attributes) }}>{{ item.content }}</{{ field_item_wrapper_tag }}>
     {% endfor %}
-  </ul>
-</div>
+  {% endif %}
+{% else %}
+  <{{ field_wrapper_tag }}{{ attributes.addClass(classes).merge(field_wrapper_attributes) }}>
+    <{{ label_tag|default('div') }}{{ title_attributes.addClass(title_classes) }}>{{ label }}</{{ label_tag|default('div') }}>
+    {% if multiple %}
+      <div class="field__items">
+    {% endif %}
+    {% for item in items %}
+      <{{ field_item_wrapper_tag }}{{ item.attributes.addClass('field__item') }}>{{ item.content }}</{{ field_item_wrapper_tag }}>
+    {% endfor %}
+    {% if multiple %}
+      </div>
+    {% endif %}
+  </{{ field_wrapper_tag }}>
+{% endif %}
