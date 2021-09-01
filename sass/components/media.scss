@@ -1,5 +1,8 @@
-main#content .no-image-borders {
-	img {
-		border: 0;
+main#content {
+	.no-image-borders,
+	.caption {
+		img {
+			border: 0;
+		}
 	}
 }
