@@ -29,3 +29,13 @@
 [dir="rtl"] .caption-blockquote > figcaption {
   text-align: right;
 }
+
+.no-caption-borders .caption {
+  .embedded-entity, figcaption {
+    border: 0;
+  }
+}
+
+.no-caption-backgrounds .caption > * {
+  background: unset;
+}
